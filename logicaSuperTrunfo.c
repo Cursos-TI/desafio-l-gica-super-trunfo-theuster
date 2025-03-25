@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include <string.h> // Para strcmp
+#include <string.h> 
 
 int main() {
-    // Variáveis (mantive as mesmas do seu código)
+    // Variáveis 
     char estado1, estado2;
     char codigoCarta1[5], codigoCarta2[5];
     char nomeCidade1[50], nomeCidade2[50];
@@ -14,7 +14,7 @@ int main() {
     float pib1, pib2;
     int comparacao;
 
-    // Entrada de dados (igual ao seu código)
+    // Entrada de dados 
     printf("\n\n--- INFORMAÇÕES DA PRIMEIRA CARTA ---\n\n");
     printf("Qual o Estado (De A a H): ");
     scanf(" %c", &estado1);
@@ -117,7 +117,7 @@ int main() {
             }
             break;
 
-        case 5: // Densidade demográfica (regra especial: menor valor vence)
+        case 5: // Densidade demográfica (menor valor vence)
             printf("Atributo: Densidade Demográfica\n");
             printf("%s: %.2f hab/km² | %s: %.2f hab/km²\n", nomeCidade1, densidadepop1, nomeCidade2, densidadepop2);
             if (densidadepop1 < densidadepop2) {
